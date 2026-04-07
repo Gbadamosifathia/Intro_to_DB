@@ -11,5 +11,7 @@ try:
 except mysql.connector.Error as e:
     print(f"Error connecting to MySQL: {e}")
 finally:
-    mycursor.close()
-    mydb.close()
+    if 'mycursor' in locals():
+        mycursor.close()
+    if 'mydb' in locals():
+        mydb.close()
