@@ -6,3 +6,4 @@ It includes:
 - Creating databases and tables
 - Inserting data
 - Connecting to MySQL using Python
+- Modification in main branchgit
